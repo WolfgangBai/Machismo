@@ -14,6 +14,11 @@
 		1A0FC2C11C91BB0600F9CB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0FC2C01C91BB0600F9CB95 /* Assets.xcassets */; };
 		1A0FC2C41C91BB0600F9CB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0FC2C21C91BB0600F9CB95 /* LaunchScreen.storyboard */; };
 		1A0FC2CF1C91BB0700F9CB95 /* MachismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FC2CE1C91BB0700F9CB95 /* MachismoTests.m */; };
+		1A0FC2DE1C9318C600F9CB95 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FC2DD1C9318C600F9CB95 /* Card.m */; };
+		1A0FC2E11C93B48100F9CB95 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FC2E01C93B48100F9CB95 /* Deck.m */; };
+		1A0FC2E41C93F1A200F9CB95 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FC2E31C93F1A200F9CB95 /* PlayingCard.m */; };
+		1A0FC2E71C9505C900F9CB95 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FC2E61C9505C900F9CB95 /* PlayingCardDeck.m */; };
+		1A0FC2ED1C9557DB00F9CB95 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FC2EC1C9557DB00F9CB95 /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		1A0FC2CA1C91BB0700F9CB95 /* MachismoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MachismoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0FC2CE1C91BB0700F9CB95 /* MachismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachismoTests.m; sourceTree = "<group>"; };
 		1A0FC2D01C91BB0700F9CB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0FC2DC1C9318C600F9CB95 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		1A0FC2DD1C9318C600F9CB95 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		1A0FC2DF1C93B48100F9CB95 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		1A0FC2E01C93B48100F9CB95 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		1A0FC2E21C93F1A200F9CB95 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		1A0FC2E31C93F1A200F9CB95 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		1A0FC2E51C9505C900F9CB95 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		1A0FC2E61C9505C900F9CB95 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		1A0FC2EB1C9557DB00F9CB95 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		1A0FC2EC1C9557DB00F9CB95 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +96,11 @@
 		1A0FC2B31C91BB0600F9CB95 /* Machismo */ = {
 			isa = PBXGroup;
 			children = (
-				1A0FC2B71C91BB0600F9CB95 /* AppDelegate.h */,
-				1A0FC2B81C91BB0600F9CB95 /* AppDelegate.m */,
 				1A0FC2BA1C91BB0600F9CB95 /* ViewController.h */,
 				1A0FC2BB1C91BB0600F9CB95 /* ViewController.m */,
 				1A0FC2BD1C91BB0600F9CB95 /* Main.storyboard */,
+				1A0FC2DB1C9317D500F9CB95 /* Model */,
+				1A0FC2D91C91D44000F9CB95 /* Supporting Files */,
 				1A0FC2C01C91BB0600F9CB95 /* Assets.xcassets */,
 				1A0FC2C21C91BB0600F9CB95 /* LaunchScreen.storyboard */,
 				1A0FC2C51C91BB0600F9CB95 /* Info.plist */,
@@ -109,6 +124,32 @@
 				1A0FC2D01C91BB0700F9CB95 /* Info.plist */,
 			);
 			path = MachismoTests;
+			sourceTree = "<group>";
+		};
+		1A0FC2D91C91D44000F9CB95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A0FC2B71C91BB0600F9CB95 /* AppDelegate.h */,
+				1A0FC2B81C91BB0600F9CB95 /* AppDelegate.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A0FC2DB1C9317D500F9CB95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A0FC2DC1C9318C600F9CB95 /* Card.h */,
+				1A0FC2DD1C9318C600F9CB95 /* Card.m */,
+				1A0FC2DF1C93B48100F9CB95 /* Deck.h */,
+				1A0FC2E01C93B48100F9CB95 /* Deck.m */,
+				1A0FC2E21C93F1A200F9CB95 /* PlayingCard.h */,
+				1A0FC2E31C93F1A200F9CB95 /* PlayingCard.m */,
+				1A0FC2E51C9505C900F9CB95 /* PlayingCardDeck.h */,
+				1A0FC2E61C9505C900F9CB95 /* PlayingCardDeck.m */,
+				1A0FC2EB1C9557DB00F9CB95 /* CardMatchingGame.h */,
+				1A0FC2EC1C9557DB00F9CB95 /* CardMatchingGame.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0FC2E41C93F1A200F9CB95 /* PlayingCard.m in Sources */,
+				1A0FC2E11C93B48100F9CB95 /* Deck.m in Sources */,
 				1A0FC2BC1C91BB0600F9CB95 /* ViewController.m in Sources */,
 				1A0FC2B91C91BB0600F9CB95 /* AppDelegate.m in Sources */,
+				1A0FC2ED1C9557DB00F9CB95 /* CardMatchingGame.m in Sources */,
+				1A0FC2E71C9505C900F9CB95 /* PlayingCardDeck.m in Sources */,
 				1A0FC2B61C91BB0600F9CB95 /* main.m in Sources */,
+				1A0FC2DE1C9318C600F9CB95 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Machismo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Amazing.Machismo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Machismo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Amazing.Machismo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -402,6 +450,7 @@
 				1A0FC2D51C91BB0700F9CB95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A0FC2D61C91BB0700F9CB95 /* Build configuration list for PBXNativeTarget "MachismoTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +459,7 @@
 				1A0FC2D81C91BB0700F9CB95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
